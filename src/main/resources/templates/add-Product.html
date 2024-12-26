@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<title>product form</title>
+	<body>
+		<h1>product form:</h1>
+		<form th:action="@{/saveproduct}" method="post">
+
+	<label>name:</label>
+	<input type="text" name="Name" requried>
+	<br><br>
+	<label>brand:</label>
+		<input type="text" name="Brand" requried>
+		<br><br>
+									
+	<label>madeIn:</label>
+	<input type="text" name="Madein" requried>
+	<br><br>
+	
+	<label>price:</label>
+	<input type="number" name="Price" requried>
+	<br><br>
+	
+	<label>discountPrice:</label>
+	<input type="number" name="DiscountPrice" requried>
+	<br><br>
+	
+	<label>quantity:</label>
+		<input type="number" name="Quantity" requried>
+		<br><br>
+		
+	<button type="'submit'">save product</button>
+	<button type="'reset'">reset</button>	
+		</form>
+	</body>
+</head>
